@@ -77,7 +77,15 @@ TEMPLATES = [
         },
     },
 ]
-
+CSRF_TRUSTED_ORIGINS = [
+    'https://railway.app/'
+],
+ALLOWED_HOSTS = [
+    '*',
+],
+CORS_ORIGIN_WHITELIST = [
+    'https://railway.app/',
+]
 WSGI_APPLICATION = 'blog.wsgi.application'
 
 
